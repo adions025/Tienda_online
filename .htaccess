@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Entrar usuari i contrasenya"
+AuthUserFile /tdiw/tdiw-j6/public_html/.htpasswd
+Require valid-user
