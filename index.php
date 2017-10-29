@@ -1,15 +1,26 @@
 
-
-
-    <?PHP include __DIR__. '/view/include/header.php'  ?>
-
-    <?PHP
- /*
-    $pagina = isset($_GET['p']) ? strtolower($_GET['p']) : 'inicio';
- */
-    ?>
-
 <!--#####################################################################-->
+
+    <?PHP include __DIR__. '/view/include/header.php';
+    if (! isset($_GET['page']))
+    {
+        include('./home.php');
+
+    } else {
+        $page = $_GET['page'];
+        switch($page)
+        {
+            case 'inicio':
+                include('./index.php');
+                break;
+            case 'registro':
+                include('/view/registro.php');
+                break;
+        }
+    }
+    include("footer.php");
+    ?>
+    <!--#####################################################################-->
 
 	<section id="main-content">
 
@@ -18,17 +29,15 @@
 				<div class="slide"> </div>
 				<div class="baner1"> </div>
 				<div class="baner2"> </div>
-				
 				<!--<img src="img/slide.png" alt="slide" height="400" width="1110" /> -->
-				
-				<!-- <img src="img/slide.png" alt="slide" /> -->
+                <!-- <img src="img/slide.png" alt="slide" /> -->
 			</div>
 		</header>
 
 		<div class="content">
-			<p>Conteniido pruebas Conteniido pruebas Conteniido pruebas Conteniido pruebas Conteniido pruebas Conteniido pruebas Conteniido pruebas Conteniido pruebas.</p>
-
+			<p>Conteniido pruebasaaaaaa.</p>
             <p>Usuarios base de datos:</p>
+
             <?php require'model/ConnectDB.php' ?>
             <br/>
 
