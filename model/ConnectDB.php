@@ -22,6 +22,11 @@
             echo("<br/>");
         }
 
+        foreach ($result as $key => $value ){
+
+            echo $value['email_usuario'];
+            echo("<br/>");
+        }
 
 
     }catch (Exception $e){

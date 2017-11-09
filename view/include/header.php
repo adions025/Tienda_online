@@ -31,6 +31,8 @@
                 <ul>
                     <li> <a href="<?php echo $inicio_path ?>">Inicio </a></li>
                     <li> <a href="<?php echo $registro_path ?>">Registro </a></li>
+                    <!--<li class="<?php echo $pagina == 'nosotros' ? 'active' : ''; ?>"><a href="?p=nosotros">Nosotros</a></li> -->
+                    <li><a href="index.php?page=productos"> Productos </a></li>
                 </ul>
         </nav>
     <!-- ###################################################################### -->

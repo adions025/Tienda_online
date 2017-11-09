@@ -12,11 +12,16 @@
         {
             case 'inicio':
                 include('./index.php');
+                echo ('prueba');
                 break;
             case 'registro':
                 include('/view/registro.php');
                 break;
+            case 'productos':
+                include('productos.php');
+                break;
         }
+
     }
     include("footer.php");
     ?>
