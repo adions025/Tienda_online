@@ -2,14 +2,14 @@
     <?PHP include __DIR__. '/view/include/header.php';
     if (! isset($_GET['page']))
     {
-       include('view/main.php');
+       include('view/home.php');
 
     } else {
         $page = $_GET['page'];
         switch($page)
         {
-            case 'inicio':
-                include('view/main.php');
+            case 'home':
+                include('view/home.php');
                 break;
 
             case 'productos':
@@ -17,7 +17,7 @@
                 break;
 
             case 'categorias':
-                include('view/productos.php');
+                include('view/categorias.php');
                 break;
 
             case 'registro':
