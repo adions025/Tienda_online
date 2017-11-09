@@ -1,4 +1,4 @@
-
+<!-- adonis gonzalez | paul paredes -->
     <?PHP include __DIR__. '/view/include/header.php';
     if (! isset($_GET['page']))
     {
