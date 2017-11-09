@@ -1,0 +1,21 @@
+/* ################ Establebecemos diseño  en concreto para "productos.php"" ############*/
+
+#main-content-categorias{
+    /*border: 1px solid red;*/
+    background: white;
+    width: 90%;
+    max-width: 1140px;
+    /* si quieremos agrandar verticalmente
+           height: 90%;
+           max-height: 900px;
+   */
+    margin: 0px auto;  /* 20px auto; */
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+#main-content-productos .content {
+    padding: 10px;
+    border: 1px solid #00F3CB;
+}
+
+

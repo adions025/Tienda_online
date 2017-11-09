@@ -84,44 +84,6 @@
 
 
 
-/* ################ Establebecemos diseño  en concreto para "registro.html"" ############*/
-
-	#main-content-registro {
-		/*border: 1px solid red;*/
-	   background: white;
-	   width: 90%;
-	   max-width: 1140px;
-	   margin: 0px auto;  /* 20px auto; */
-	   box-shadow: 0 0 10px rgba(0,0,0,.1);
-   }
-   #main-content-registro header,
-   #main-content-registro .registro-content{
-	padding: 20px;
-   }
-
-   #main-content-registro .registro-content,
-   #main-content-registro input
-   {
-	width: 300px;
-	clear: both;
-   }
-   
-   /* ################ Establebecemos diseño  en concreto para "productor.html"" ############*/
-
-	#main-content-productos{
-		/*border: 1px solid red;*/
-	   background: white;
-	   width: 90%;
-	   max-width: 1140px;
-/* si quieremos agrandar verticalmente
-	   height: 90%;
-	   max-height: 900px;
-	   */
-	   margin: 0px auto;  /* 20px auto; */
-	   box-shadow: 0 0 10px rgba(0,0,0,.1);
-   }
-
-
 
 
 

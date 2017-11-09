@@ -4,12 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>Registro</title>
+    <link rel="stylesheet" type="text/css" href="view/resources/css/registro.css">
 </head>
 
 <body>
-
-<?PHP include __DIR__. '/../view/include/header.php' ?>
-
 
 <!--#####################################################################-->
 
@@ -37,11 +35,6 @@
 
     </section> <!-- / #main-content -->
 
-
-</section>
-
-
-<?PHP include __DIR__. '/../view/include/footer.php' ?>
 
 
 </body>
