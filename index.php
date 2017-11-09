@@ -9,7 +9,7 @@
         switch($page)
         {
             case 'home':
-                include('view/home.php');
+                include('controller/controllerHome.php');
                 break;
 
             case 'productos':
