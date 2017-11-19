@@ -1,9 +1,12 @@
-/* ################ Establebecemos diseño  en concreto para "productos.php"" ############*/
-
+/*
+ *
+ *  Estilo para la pagina de Productos
+ *
+ */
 #main-content-productos{
     /*border: 1px solid red;*/
     background: white;
-    width: 90%;
+    width: 98%;
     max-width: 1140px;
     /* si quieremos agrandar verticalmente
            height: 90%;
@@ -13,9 +16,10 @@
     box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
-#main-content-productos .content {
-    padding: 10px;
-    border: 1px solid #00F3CB;
+#main-content-productos header,
+#main-content-categorias .productos-content{
+    padding: 20px;
+    width: 300px;
+    clear: both;
 }
-
 

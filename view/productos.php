@@ -1,24 +1,16 @@
-
-
-
     <?PHP include __DIR__.'/../view/include/menu.php';?>
-
-
     <section id="main-content-productos">
+        <header>
+            <h1> Todos los productos</h1>
+        </header>
 
-            <p>prueba</p>
-
-
-            <div class="content">
+            <div class="productos-content">
                 <p>Conteniido pruebasaaaaaa.</p>
                 <p>Usuarios base de datos:</p>
-
-                <?php require'model/ConnectDB.php' ?>
                 <br/>
 
-
             </div>
-        </section>
+    </section>
 
 
 

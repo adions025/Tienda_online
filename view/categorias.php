@@ -1,5 +1,5 @@
-        <!--<title>Categorias</title>   /* PREGUNTAR SI PONER title en cada pag-->
-        <?php include __DIR__.'/include/menu.php'?>
+    <!--<title>Categorias</title>   /* PREGUNTAR SI PONER title en cada pag-->
+    <?php include __DIR__.'/include/menu.php'?>
 
     <section id="main-content-categorias">
         <header>
@@ -9,8 +9,10 @@
         <div class="categorias-content">
             <?PHP
             foreach($result as $categoria):
+                /*
                 echo $categoria['Id_categoria'];
                 echo $categoria['nombre_categoria'];
+                */
 
                 echo $categoria['descripciom_categorias'];
                 ?>
@@ -20,10 +22,7 @@
                 endforeach;
             ?>
             <br/>
-
         </div>
 
     </section>
-</body>
-</html>
 

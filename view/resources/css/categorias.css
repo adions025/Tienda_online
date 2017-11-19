@@ -1,12 +1,12 @@
 /*
  *
- *  Diseño para la pagina de Categorias
+ *  Estilo para la pagina de Categorias
  *
  */
 #main-content-categorias{
     /*border: 1px solid red;*/
     background: white;
-    width: 90%;
+    width: 98%;
     max-width: 1140px;
     /* si quieremos agrandar verticalmente
            height: 90%;
@@ -17,9 +17,11 @@
     /*border: 1px solid red;*/
 }
 
+
 #main-content-categorias header,
 #main-content-categorias .categorias-content {
     padding: 20px;
     width: 300px;
+    clear: both;
 }
 
