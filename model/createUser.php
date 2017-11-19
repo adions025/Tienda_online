@@ -1,25 +1,22 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: adonisgonzalez
- * Date: 19/11/17
- * Time: 1:50
- */
-$objData = new ConnectDB();
 
-/*$sql = 'INSERT INTO tdiw-j6 (email`, password) VALUES (:email, :password)';*/
+function insertarUsuario()
+{
+    $objData = new ConnectDB();
+    echo "estoy en Conext2";
 
-$stmt = $objData->prepare("INSERT INTO tdiw-j6 VALUES(:id, :nombre)");
-$stmt->bindValue(':id', $id);
-$stmt->bindValue(':name', $nombre);
-$stmt->execute();
+    $nombre_usuario = $_POST['nombre'];
+    $email_usuario = $_POST['email'];
 
+    $stmt = $objData->prepare('INSERT INTO prueba (nombre_usuarios,email_usuarios) '
+        . 'VALUES (:nombre_usuario, :email_usuario)');
+    $stmt->bindParam('nombre_usuario', $nombre_usuario);
+    $stmt->bindParam('email_usuario', $email_usuario);
 
-/*
-$sth = $objData->prepare('SELECT idUser, naUser, paUser FROM users '
-    . 'where naUser = :naUser and paUser = :paUser');
-$sth->bindParam(':naUser', $usuario);
-$sth->bindParam(':paUser', $clave);
+    echo "estoy en Conext3";
+    $stmt->execute();
+    echo "estoy en Conext4";
 
-    $stmt = $conn->prepare("INSERT INTO tbl VALUES(:id, :name)");
-*/
+}
+?>
+

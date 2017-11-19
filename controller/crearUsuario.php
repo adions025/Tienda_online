@@ -1,13 +1,24 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: adonisgonzalez
- * Date: 18/11/17
- * Time: 23:13
- */
 
-    require '../model/ConnectDB.php';
+ require '../model/ConnectDB.php';
 
+ echo "llega a crear usuario";
+
+ require '../model/createUser.php';
+
+
+
+
+    /*$objData = new ConnectDB();*/
+    insertarUsuario();
+
+echo "llega a crear usuario555";
+
+
+
+
+
+    /*
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         ['email' => $email, 'password' => $password] = filter_input_array(INPUT_POST,
         [
@@ -16,4 +27,5 @@
         ]
         );
     }
-
+    */
+?>

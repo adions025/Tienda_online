@@ -6,11 +6,22 @@
         <p>prueba</p>
 
         <div class="content">
-            <p>Conteniido pruebasaaaaaa.</p>
-            <p>Usuarios base de datos:</p>
-            <p>ADONIS GONZALEZ</p>
 
-            <?/*php require'model/ConnectDB.php' */?>
+            <?PHP
+            foreach($result as $categoria):
+                echo $categoria['Id_categoria'];
+                echo $categoria['nombre_categoria'];
+
+                echo $categoria['descripciom_categorias'];
+                ?>
+                <img src="img/<?PHP echo $categoria['imagenes_categorias']?>.<?PHP echo $categoria['formato_imagen']?>">
+                <?php
+                echo("<br/>");
+                endforeach;
+
+            ?>
+
+
             <br/>
 
         </div>

@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Registro</title>
-    <link rel="stylesheet" type="text/css" href="view/resources/css/registro.css">
-</head>
-
 <body>
+<?PHP include __DIR__.'/../view/include/menu.php';?>
+<?/*PHP require '../model/ConnectDB.php'*/;?>
 
 <!--#####################################################################-->
 
@@ -18,14 +11,10 @@
         </header>
 
         <div class="registro-content">
-            <form method="get" action="" onsubmit="return confirmRegistration();">
+            <form method="post" action="http://deic-dc0.uab.cat/~tdiw-j6/controller/crearUsuario.php">
 
                 Nombre: <input type="text" name="nombre"/> <br/>
-                Password: <input type="password" name="password"/> <br/>
                 Email: <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/> <br/>
-                Dirección: <input type="text" name="address"/> <br/>
-                Ciudad: <input type="text" name="ciudad" equired size="30 "/> <br/> <!--30 caracteres y espacio -->
-                Código Postal *: <input type="text" name="cp" required size="5" pattern="[0-9]{5}" title="El codigo postal tiene 5 caracteres"/> <br/>
                 <!--codigo postal obligatorio 5  cacteres-->
                 <br/><br />
                 <input type="submit" value="Registro">

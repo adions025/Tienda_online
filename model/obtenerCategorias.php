@@ -5,17 +5,21 @@
  * Date: 10/11/17
  * Time: 10:56
  */
+    echo 'llega aqui al model obtercategorias';
+function obtenerCategorias()
+{
 
-function obtenerCategorias(){
+    $objData = new ConnectDB();
+    $sql = $objData->prepare('SELECT * FROM Categoria');
 
-    $sql= $conn->prepare('SELECT * FROM Categorias');
     $sql->execute();
 
-
-   /* while($result = $sql->fetch())*/
-
-$result = $sql->fetchAll();
-
+    while($result = $sql->fetch(PDO::FETCH_ASSOC)){
+        $datos[]=$result;
+    }
+    return $datos;
+}
+/*
 foreach ($result as $key => $value ){
 
     echo $value['Id_categoria'];
@@ -39,5 +43,6 @@ foreach ($result as $key => $value ){
 
     die('Error: ' .$e->getMessage());
 }
+*/
 
 ?>
