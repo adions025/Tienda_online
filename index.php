@@ -1,23 +1,27 @@
-<!-- adonis gonzalez | paul paredes -->
+
+<!-- Adonis Gonzalez | Paul Paredes -->
+<!-- 1423193         |  14xxxx      -->
+
     <?PHP include __DIR__. '/view/include/header.php';
     if (! isset($_GET['page']))
     {
-       include('view/home.php');
+       /*include('view/home.php');*/
+        include __DIR__.'/controller/controlerHome.php';
 
     } else {
         $page = $_GET['page'];
         switch($page)
         {
             case 'home':
-                include('controller/controllerHome.php');
+                include('controller/controlerHome.php');
                 break;
 
             case 'productos':
-                include('view/productos.php');
+                include('controller/controlerProductos.php');
                 break;
 
             case 'categorias':
-                include('view/categorias.php');
+                include('controller/controlerCategorias.php');
                 break;
 
             case 'registro':
@@ -29,5 +33,4 @@
 
     }
     include("view/include/footer.php");
-    ?>
 

@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-    <head>
-        <meta charset="utf-8">
-        <title>Productos</title>
-        <link rel="stylesheet" type="text/css" href="view/resources/css/categorias.css">
-    </head>
-
-
-    <body>
+        <!--<title>Categorias</title>   /* PREGUNTAR SI PONER title en cada pag-->
+        <?php include __DIR__.'/include/menu.php'?>
 
     <section id="main-content-categorias">
 
@@ -17,14 +8,13 @@
         <div class="content">
             <p>Conteniido pruebasaaaaaa.</p>
             <p>Usuarios base de datos:</p>
+            <p>ADONIS GONZALEZ</p>
 
-            <?php require'model/ConnectDB.php' ?>
+            <?/*php require'model/ConnectDB.php' */?>
             <br/>
 
         </div>
+
     </section>
 
 
-    </body>
-
-</html>

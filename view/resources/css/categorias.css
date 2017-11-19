@@ -11,9 +11,10 @@
    */
     margin: 0px auto;  /* 20px auto; */
     box-shadow: 0 0 10px rgba(0,0,0,.1);
+    /*border: 1px solid red;*/
 }
 
-#main-content-productos .content {
+#main-content-categorias .content {
     padding: 10px;
     border: 1px solid #00F3CB;
 }
