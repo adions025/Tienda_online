@@ -2,11 +2,11 @@
         <?php include __DIR__.'/include/menu.php'?>
 
     <section id="main-content-categorias">
+        <header>
+            <h1> Todas las Categorias</h1>
+        </header>
 
-        <p>prueba</p>
-
-        <div class="content">
-
+        <div class="categorias-content">
             <?PHP
             foreach($result as $categoria):
                 echo $categoria['Id_categoria'];
@@ -18,14 +18,12 @@
                 <?php
                 echo("<br/>");
                 endforeach;
-
             ?>
-
-
             <br/>
 
         </div>
 
     </section>
-
+</body>
+</html>
 

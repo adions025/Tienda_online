@@ -1,5 +1,8 @@
-/* ################ Establebecemos diseño  en concreto para "productos.php"" ############*/
-
+/*
+ *
+ *  Diseño para la pagina de Categorias
+ *
+ */
 #main-content-categorias{
     /*border: 1px solid red;*/
     background: white;
@@ -14,9 +17,9 @@
     /*border: 1px solid red;*/
 }
 
-#main-content-categorias .content {
-    padding: 10px;
-    border: 1px solid #00F3CB;
+#main-content-categorias header,
+#main-content-categorias .categorias-content {
+    padding: 20px;
+    width: 300px;
 }
-
 
