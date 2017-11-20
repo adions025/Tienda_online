@@ -14,15 +14,18 @@
                 echo $categoria['nombre_categoria'];
                 */
 
-                echo $categoria['descripciom_categorias'];
+               /* echo $categoria['descripciom_categorias'];*/
                 ?>
-                <img src="img/<?PHP echo $categoria['imagenes_categorias']?>.<?PHP echo $categoria['formato_imagen']?>">
+                <img src="img/categorias/<?PHP echo $categoria['imagenes_categorias']?>.<?PHP echo $categoria['formato_imagen']?>" alt="<?PHP echo $catergoria['nombre_categoria']?>">
                 <?php
                 echo("<br/>");
                 endforeach;
+
+
             ?>
             <br/>
         </div>
 
     </section>
+
 
