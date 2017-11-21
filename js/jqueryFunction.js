@@ -28,10 +28,6 @@ console.log(data);
     */
 
 
-
-
-
-
     selectCategory("3");
         $('.category').click(function(){
             var id = this.id;
@@ -39,7 +35,6 @@ console.log(data);
 
             //alert(id);
         });
-
 
 
     $('#productos-de-categorias').on('click', '.product', function () {
@@ -65,12 +60,13 @@ function selectCategory(id) {
 
         console.log('Load completed!');
     })
-
-
-
-
 }
 
+function confirmRegistration(){
+    alert("ESTAS SEGURO DE QUE QUIERES REGISTRARTE????");
+    document.getElementById("main-content-registro").innerHTML= "<p>Te acabas de registrar con éxito, se ha enviado un email de confirmación a tu correo electrónico.</p>";
+    return true;
+}
 
 
 

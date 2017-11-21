@@ -12,7 +12,7 @@
     </header>
 
     <div class="registro-content">
-        <form method="post" action="http://deic-dc0.uab.cat/~tdiw-j6/controller/crearUsuario.php">
+        <form method="post" action="http://deic-dc0.uab.cat/~tdiw-j6/controller/crearUsuario.php" onsubmit="confirmRegistration()"/>
 
             Nombre: <input type="text" name="nombre"/> <br/>
             Password: <input type="password" name="password"/> <br/>
@@ -22,7 +22,7 @@
             Código Postal *: <input type="text" name="cp" required size="5" pattern="[0-9]{5}" title="El codigo postal tiene 5 caracteres"/> <br/>
             <!--codigo postal obligatorio 5  cacteres-->
             <br/><br />
-            <input type="submit" value="Registro">
+            <input type="submit" value="Registro"/>
         </form>
     </div>
 
