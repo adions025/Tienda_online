@@ -77,21 +77,26 @@
         text-align: center;
         padding-right: 40px;
     }
-    #main-content li{
+    .list-menu{
         display: inline;
         text-align: center;
         margin: 0 -5px 0 0;
     }
-    #main-content li a {
+     .link-menu{
         padding: 10px 80px 10px 80px; /*arriba, derecha, abajo, izquierda */
         color: #666;
         background-color: #eeeeee;
         border: 1px solid #ccc;
         text-decoration: none;
     }
-    #main-content li a:hover{
+    .link-menu:hover{
         background-color: #DD5050;
         color: #ffffff;
+    }
+
+   .selected {
+        background-color: #DD5050 !important;
+        color: #ffffff !important;
     }
 
 

@@ -14,4 +14,13 @@
                 <br/>
 
             </div>
+            <?PHP foreach($result as $producto): ?>
+                <li >
+                    <a
+                            href="#" class="product" id="<?PHP echo $producto['Id_producto'];?>"> <img src="img/productos/<?PHP echo $producto['imagen_producto']?>.<?PHP echo $producto['formato_imagen']?>" alt="<?PHP echo $producto['nombre_producto']?>"></a>
+                </li>
+
+            <?php endforeach;?>
+
+
     </section>

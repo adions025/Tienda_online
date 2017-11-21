@@ -1,5 +1,7 @@
 
 console.log("Debug Consola JS"); //output messages to the consol
+
+
 /*
 function confirmRegistration(){
     alert("Al dar click aceptas los términos y condiciones");

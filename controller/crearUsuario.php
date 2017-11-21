@@ -1,6 +1,6 @@
 
 <?php
-        require '../model/ConnectDB.php';
+      require '../model/ConnectDB.php';
 
         echo "llega a crear usuario";
 
@@ -8,4 +8,13 @@
         insertarUsuario();
 
 
+
+/*
+if($_POST["nombre"]=="julanito"){
+    $response["valid"]=false;
+}else{
+    $response["valid"]=true;
+}
+echo json_encode($response);
 ?>
+*/

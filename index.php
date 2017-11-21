@@ -28,6 +28,10 @@
                 include('controller/controlerRegistro.php');
                 break;
 
+            case 'soloproducto':
+                include('controller/controlerSoloProducto.php');
+                break;
+
         }
 
     }
