@@ -12,3 +12,4 @@
     <link rel="stylesheet" type="text/css" href="view/resources/css/registro.css">
 
 
+

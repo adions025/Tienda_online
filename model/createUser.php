@@ -1,5 +1,6 @@
 <?php
 
+echo "estoy aqui";
 function insertarUsuario()
 {
     $objData = new ConnectDB();
@@ -19,4 +20,3 @@ function insertarUsuario()
 
 }
 ?>
-

@@ -25,9 +25,8 @@
                 break;
 
             case 'registro':
-                include('view/registro.php');
+                include('controller/controlerRegistro.php');
                 break;
-
 
         }
 

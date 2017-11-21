@@ -21,7 +21,32 @@
 #main-content-categorias header,
 #main-content-categorias .categorias-content {
     padding: 20px;
-    width: 300px;
+    /*width: 300px;*/
     clear: both;
 }
 
+#main-content-categorias ul{
+    list-style-type: none;
+    text-align: center;
+
+
+}
+
+#main-content-categorias li{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+
+#main-content-categorias li a {
+    padding:170px 50px 0px 70px; /*arriba, derecha, abajo, izquierda */
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+#main-content-categorias li a:hover{
+    background-color: #DD5050;
+    color: #ffffff;
+}

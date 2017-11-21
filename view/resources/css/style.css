@@ -70,8 +70,33 @@
 		border: 1px solid #00F3CB;
 	}
 
+    /*
+    /*
+     *######### codigo del menu categorias del home ###########*/
+    /*
+     */
+    #main-content .categoria-menu-home {
+        list-style-type: none;
+        text-align: center;
 
+    }
+    #main-content li{
+        display: inline;
+        text-align: center;
+        margin: 0 0px 0 0;
+    }
 
+    #main-content li a {
+        padding: 10px 10px 10px 10px; /*arriba, derecha, abajo, izquierda */
+        color: #666;
+        background-color: #eeeeee;
+        border: 1px solid #ccc;
+        text-decoration: none;
+    }
+    #main-content li a:hover{
+        background-color: #DD5050;
+        color: #ffffff;
+    }
 
 
 

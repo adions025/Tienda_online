@@ -1,31 +1,11 @@
+
 <?php
+        require '../model/ConnectDB.php';
 
- require '../model/ConnectDB.php';
+        echo "llega a crear usuario";
 
- echo "llega a crear usuario";
-
- require '../model/createUser.php';
-
-
+        require '../model/createUser.php';
+        insertarUsuario();
 
 
-    /*$objData = new ConnectDB();*/
-    insertarUsuario();
-
-echo "llega a crear usuario555";
-
-
-
-
-
-    /*
-    if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        ['email' => $email, 'password' => $password] = filter_input_array(INPUT_POST,
-        [
-            'email' => FILTER_DEFAULT,
-            'password' => FILTER_DEFAULT
-        ]
-        );
-    }
-    */
 ?>
