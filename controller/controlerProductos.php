@@ -1,10 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: adonisgonzalez
- * Date: 18/11/17
- * Time: 22:09
- */
 
+$Id_categoria = $_GET['Id_Categoria'];
+
+include __DIR__.'/../model/ConnectDB.php';
+include __DIR__.'/../model/obtenerProductos.php';
+
+$result = obtenerProductosdeCategorias($Id_categoria);
+
+
+/*print_r($result);*/
 include __DIR__.'/../view/productos.php';
 

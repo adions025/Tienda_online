@@ -1,3 +1,4 @@
+
 console.log("Debug Consola JS"); //output messages to the consol
 /*
 function confirmRegistration(){
@@ -6,6 +7,7 @@ function confirmRegistration(){
     return true;
 }
 */
+/*
 function confirmRegistration(){
     $("button#submit").click(function(){
         if($("#nombre").val() === "" || $("#email").val() === ""){
@@ -25,3 +27,21 @@ function confirmRegistration(){
             return false;
         });
     })}
+   */
+
+
+function loadDoc(Id_categoria) {
+    var xhttp = new XMLHttpRequest();
+   /* var degreesTag = document.getElementById("degrees");*/
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML =
+                this.responseText;
+        }
+    };
+    xhttp.open("GET", "index.php?page=productos&Id_Categoria="+Id_categoria, true);
+    /*  xmlhttp.open("GET","degreeMentions.php?degree="+degreesTag.value, true); */
+    xhttp.send();
+}
+
+

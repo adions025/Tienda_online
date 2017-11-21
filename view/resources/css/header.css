@@ -1,25 +1,20 @@
 
 #main-header {
-    border: 1px solid black;
+    /*border: 1px solid black;*/ /*solo para mirar marco */
     background-color:  white;
     height: 100px; /*altura*/
     width: 98%;
     max-width: 1140px;
-
-    /*max-width: 1200px;*/
     margin: 0px auto; /* 20px auto; */
     left: 0;
     top: 0;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
 }
-
 /* color letra header nombre de nuestra tienda*/
 #main-header a {
     color: #E71414;
 }
-
 /*imagenes se pone de la misma manera OJO */
-
 img {
     max-width: 100%;
     height: auto;
@@ -48,11 +43,14 @@ img {
     width: 98%;
     max-width: 1140px; /*ancho*/
     height: 40px;
-    margin: 0px auto; /*distancia entre el header y menu */
+    margin: 3px auto; /*distancia entre el header y menu */
     /*border: 1px solid black;*/
+    /*
     border-top: 1px solid #6D6C6C;
     border-bottom: 1px solid #6D6C6C;
     border-left: 1px solid #6D6C6C;
+    */
+
     /*padding: 0px 0 100 30px;*/  /*15px 0 0 20px; */
 }
 
@@ -74,7 +72,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     line-height: 40px;
-    border-right: 1px solid #6D6C6C;
+    /*border-right: 1px solid #6D6C6C;*/
 }
 
 nav ul li a {
@@ -86,5 +84,5 @@ nav ul li a {
 
 nav ul li a:hover {
     background: #DD5050;
-    margin-left: -4px;
+    /*margin-left: -4px;*/ /*si poner border necesitamos alinear el hover */
 }

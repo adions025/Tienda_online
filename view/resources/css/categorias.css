@@ -13,8 +13,10 @@
            max-height: 900px;
    */
     margin: 0px auto;  /* 20px auto; */
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    margin-bottom: -15px; /*separamos el footer del content si queremos */
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
     /*border: 1px solid red;*/
+
 }
 
 
@@ -24,12 +26,9 @@
     /*width: 300px;*/
     clear: both;
 }
-
 #main-content-categorias ul{
     list-style-type: none;
     text-align: center;
-
-
 }
 
 #main-content-categorias li{
@@ -37,7 +36,6 @@
     text-align: center;
     margin: 0 10px 0 0;
 }
-
 #main-content-categorias li a {
     padding:170px 50px 0px 70px; /*arriba, derecha, abajo, izquierda */
     color: #666;
@@ -45,7 +43,6 @@
     border: 1px solid #ccc;
     text-decoration: none;
 }
-
 #main-content-categorias li a:hover{
     background-color: #DD5050;
     color: #ffffff;

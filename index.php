@@ -17,8 +17,8 @@
                 break;
 
             case 'productos':
-                include('controller/controlerProductos.php');
-                break;
+            include('controller/controlerProductos.php');
+            break;
 
             case 'categorias':
                 include('controller/controlerCategorias.php');
@@ -31,5 +31,5 @@
         }
 
     }
-    include("view/include/footer.php");
+
 

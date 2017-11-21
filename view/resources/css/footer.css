@@ -7,8 +7,9 @@
     margin: 0px auto; /* 20px auto; */
     left: 0;
     top: 0;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    margin-top: 0px; /*separacion del main-content con footer */
+
 }
 #main-footer p {
     margin: 0;

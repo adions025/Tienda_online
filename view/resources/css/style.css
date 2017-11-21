@@ -1,73 +1,70 @@
 	/* imagen de fondo*/
-	/*
+    /*
 	body{
 		background-image: url("http://deic-dc0.uab.cat/~tdiw-j6/img/fondo.jpg");
 	}
 	*/
  	#main-content {
 	 	/*border: 1px solid red;*/
+        padding-top: 10px; /*margen con el menu  /si se quita queda sepaacion*/
 	    background: white;
 	    width: 98%;
-	   max-width: 1140px;
-
+	    max-width: 1140px;
 	    margin: 0px auto;  /* 20px auto; */
-		box-shadow: 0 0 10px rgba(0,0,0,.1);
-		border: 1px solid red;
+		box-shadow: 0 0 10px rgba(0,0,0,.4);
+		/*border: 1px solid red;*/
 	}
-
 	#main-content .header-contenido {
 		background: #FFFFFF;
 	    width: 98.9%;
 		/*max-width: 1140px;*/
 		height: 400px;
 		margin-top: 5px;
-		border: 1px solid #3804F5;
+		/*border: 1px solid #3804F5;*/
 		margin: 10px auto;
 		/*padding-top: 10px;*/ /* alineacion por dentro del div*/
 	}
-
 	#main-content .slide{
 		background: white;
 	    width: 61%;
 		/*max-width: 1140px;*/
 		height: 380px;
 		margin-top: 5px;
-		border: 1px solid #069128;
+		/*border: 1px solid #069128;*/
 		margin: 10px 10px;
 		/*padding-top: 10px;*/ /* alineacion por dentro del div*/
+        background-image: url("http://deic-dc0.uab.cat/~tdiw-j6/img/slide/home_slide1.jpg");
 	}
-	
 	#main-content .baner1{
 		background: #FFFFFF;
 	    width: 35%;
 		/*max-width: 1140px;*/
 		height: 180px;
-		border: 1px solid #069128;
+		/*border: 1px solid #069128;*/
 		display:block;
 		margin:auto;
 		margin-top: -391px;
 		margin-right: 15px;
 		/*padding-top: 10px;*/ /* alineacion por dentro del div*/
+        background-image: url("http://deic-dc0.uab.cat/~tdiw-j6/img/slide/banner1.jpg");
 	}
-
 	#main-content .baner2{
 		background: #FFFFFF;
 	    width: 35%;
 		/*max-width: 1140px;*/
-	
 		height: 180px;
-		border: 1px solid #069128;
+		/*border: 1px solid #069128;*/
 		display:block;
 		margin:auto;
 		margin-top: 14px;
 		margin-right: 15px;
 		flex-wrap:wrap;
 		/*padding-top: 10px;*/ /* alineacion por dentro del div*/
+        background-image: url("http://deic-dc0.uab.cat/~tdiw-j6/img/slide/banner2.jpg");
 	}
-
 	#main-content .content {
 		padding: 10px;
-		border: 1px solid #00F3CB;
+		/*border: 1px solid #00F3CB;*/
 	}
 
     /*
@@ -78,16 +75,15 @@
     #main-content .categoria-menu-home {
         list-style-type: none;
         text-align: center;
-
+        padding-right: 40px;
     }
     #main-content li{
         display: inline;
         text-align: center;
-        margin: 0 0px 0 0;
+        margin: 0 -5px 0 0;
     }
-
     #main-content li a {
-        padding: 10px 10px 10px 10px; /*arriba, derecha, abajo, izquierda */
+        padding: 10px 80px 10px 80px; /*arriba, derecha, abajo, izquierda */
         color: #666;
         background-color: #eeeeee;
         border: 1px solid #ccc;
