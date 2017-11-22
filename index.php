@@ -17,7 +17,7 @@
                 break;
 
             case 'productos':
-            include('controller/controlerProductos.php');
+                include('controller/controlerProductos.php');
             break;
 
             case 'categorias':
@@ -25,11 +25,12 @@
                 break;
 
             case 'registro':
-                include('controller/controlerRegistro.php');
+                include __DIR__.'/controller/controlerRegistro.php';
                 break;
 
             case 'soloproducto':
-                include('controller/controlerSoloProducto.php');
+                include __DIR__.'/controller/controlerSoloProducto.php';
+                /*include('controller/controlerSoloProducto.php');*/
                 break;
 
         }

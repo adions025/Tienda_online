@@ -69,7 +69,7 @@
 
     /*
     /*
-     *######### codigo del menu categorias del home ###########*/
+     *######### Estilo para menu categorias del home ###########*/
     /*
      */
     #main-content .categoria-menu-home {
@@ -83,7 +83,7 @@
         margin: 0 -5px 0 0;
     }
      .link-menu{
-        padding: 10px 80px 10px 80px; /*arriba, derecha, abajo, izquierda */
+        padding: 10px 40px 10px 40px; /*arriba, derecha, abajo, izquierda */
         color: #666;
         background-color: #eeeeee;
         border: 1px solid #ccc;
@@ -98,6 +98,28 @@
         background-color: #DD5050 !important;
         color: #ffffff !important;
     }
+
+   #productos {
+       padding-left: 40px;
+
+   }
+
+   .home-product{
+       display: inline;
+       padding: 10px 30px 10px 30px;
+
+   }
+
+    .home-product-name{
+        display: inline;
+        text-align: right;
+        margin-left: 60px;
+        padding: 10px 30px 10px 30px;
+    }
+
+
+  /*######### Estilo para solopagina ###########*/
+
 
 
 

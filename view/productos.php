@@ -6,7 +6,8 @@
             <div class="productos-content">
 
                 <?PHP foreach($result as $producto): ?>
-                            <?php  echo $producto['nombre_producto']; ?>
+
+                <li class="home-product-name"> <?php  echo $producto['nombre_producto']; ?></li>
 
 
                 <?php endforeach;?>
@@ -15,7 +16,7 @@
 
             </div>
             <?PHP foreach($result as $producto): ?>
-                <li >
+                <li class="home-product" >
                     <a
                             href="#" class="product" id="<?PHP echo $producto['Id_producto'];?>"> <img src="img/productos/<?PHP echo $producto['imagen_producto']?>.<?PHP echo $producto['formato_imagen']?>" alt="<?PHP echo $producto['nombre_producto']?>"></a>
                 </li>

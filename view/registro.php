@@ -12,7 +12,7 @@
     </header>
 
     <div class="registro-content">
-        <form method="post" action="http://deic-dc0.uab.cat/~tdiw-j6/controller/crearUsuario.php" onsubmit="confirmRegistration()"/>
+        <form method="post" action="http://deic-dc0.uab.cat/~tdiw-j6/controller/crearUsuario.php"/>
 
             Nombre: <input type="text" name="nombre"/> <br/>
             Password: <input type="password" name="password"/> <br/>
@@ -29,7 +29,4 @@
 
 </section> <!-- / #main-content -->
 
-
-
-</body>
-</html>
+<?PHP include __DIR__.'/../view/include/footer.php'; ?>
