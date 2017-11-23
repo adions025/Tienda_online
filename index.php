@@ -3,9 +3,8 @@
 <!-- 1423193         |  14xxxx      -->
 
     <?PHP include __DIR__. '/view/include/header.php';
-    if (! isset($_GET['page']))
+    if (! isset($_GET['page']))  /*Operador Ternario*/
     {
-       /*include('view/home.php');*/
         include __DIR__.'/controller/controlerHome.php';
 
     } else {
@@ -13,26 +12,25 @@
         switch($page)
         {
             case 'home':
-                include('controller/controlerHome.php');
+                  include __DIR__.'/controller/controlerHome.php';
                 break;
 
-            case 'productos':
-                include('controller/controlerProductos.php');
-            break;
-
             case 'categorias':
-                include('controller/controlerCategorias.php');
+                include __DIR__.'/controller/controlerCategorias.php';
                 break;
 
             case 'registro':
                 include __DIR__.'/controller/controlerRegistro.php';
                 break;
 
+            case 'productos': /*solo view y no incluye header ni  footer*/
+                include __DIR__.'/controller/controlerProductos.php';
+                break;
+
             case 'soloproducto':
                 include __DIR__.'/controller/controlerSoloProducto.php';
                 /*include('controller/controlerSoloProducto.php');*/
                 break;
-
         }
 
     }
