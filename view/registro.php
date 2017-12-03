@@ -7,12 +7,13 @@
 
 <section id="main-content-registro">
     <header>
-        <h1>Formulario de Registro</h1>
+        <h1>Formulario de Registro para nuevos usuarios</h1>
         <p>Por favor facilitanos todos tus datos</p>
     </header>
 
     <div class="registro-content">
         <form method="post" action="http://deic-dc0.uab.cat/~tdiw-j6/controller/crearUsuario.php"/>
+
 
             Nombre: <input type="text" name="nombre"/> <br/>
             Password: <input type="password" name="password"/> <br/>

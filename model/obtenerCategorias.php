@@ -1,5 +1,4 @@
 <?php
-echo 'llega aqui al model obtercategorias ';
 function obtenerCategorias()
 {
     $objData = new ConnectDB();

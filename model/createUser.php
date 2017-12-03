@@ -4,8 +4,6 @@ function insertarUsuario()
 {
     $objData = new ConnectDB();
     echo "estoy en Conext2";
-
-
     $nombre_usuario = $_POST['nombre'];
     $password_usuario = $_POST['password'];
     $email_usuario = $_POST['email'];
@@ -19,7 +17,9 @@ function insertarUsuario()
 
     $stmt->bindParam('nombre_usuario', $nombre_usuario);
     $stmt->bindParam('email_usuario', $email_usuario);
-    $password_usuario= hash('sha256', $password_usuario); //Password encryption
+    //$password_usuario= hash('sha256', $password_usuario); //Password encryptionç
+
+    $password_usuario = password_hash($password_usuario, PASSWORD_BCRYPT);
     $stmt->bindParam("password_usuario", $password_usuario,PDO::PARAM_STR);
     $stmt->bindParam('direccion_usuario', $direccion_usuario);
     $stmt->bindParam('poblacion_usuario', $poblacion_usuario);

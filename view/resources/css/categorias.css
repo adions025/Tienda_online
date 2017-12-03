@@ -26,24 +26,24 @@
     /*width: 300px;*/
     clear: both;
 }
-#main-content-categorias ul{
+#main-content-categorias .categorias-ul{
     list-style-type: none;
     text-align: center;
 }
 
-#main-content-categorias li{
+#main-content-categorias .categogias-li{
     display: inline;
     text-align: center;
     margin: 0 10px 0 0;
 }
-#main-content-categorias li a {
+#main-content-categorias .categogias-li .category-of-products {
     padding:170px 50px 0px 70px; /*arriba, derecha, abajo, izquierda */
     color: #666;
     background-color: #eeeeee;
     border: 1px solid #ccc;
     text-decoration: none;
 }
-#main-content-categorias li a:hover{
+#main-content-categorias .categogias-li .category-of-products:hover{
     background-color: #DD5050;
     color: #ffffff;
 }

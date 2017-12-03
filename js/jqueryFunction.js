@@ -32,7 +32,6 @@ console.log(data);
         $('.category').click(function(){
             var id = this.id;
             selectCategory( id)
-
             //alert(id);
         });
 
@@ -49,7 +48,16 @@ console.log(data);
     });
 
 
+    $('.category-of-products').on('click', '.category-of-products', function(){
+        $('#categorias-de-productos').load('index.php?page=productos&Id_Categoria='+id, function () {
+            // Aquest exemple no us funcionarà si no canvieu la url de la petició
+            console.log('Load completed!');
         });
+    });
+
+
+});
+
 
 function selectCategory(id) {
     $(".category").removeClass('selected');
@@ -60,6 +68,9 @@ function selectCategory(id) {
         console.log('Load completed!');
     })
 }
+
+
+
 /*
 function confirmRegistration(){
     alert("ESTAS SEGURO DE QUE QUIERES REGISTRARTE????");

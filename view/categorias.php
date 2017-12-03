@@ -1,5 +1,6 @@
     <!--<title>Categorias</title>   /* PREGUNTAR SI PONER title en cada pag-->
     <?php include __DIR__.'/include/menu.php'?>
+    <script src="js/jqueryFunction.js"> </script>
 
     <section id="main-content-categorias">
         <header>
@@ -8,11 +9,11 @@
 
         <div class="categorias-content">
 
-                <ul>
-                    <?PHP foreach($result as $categoria): ?>
-                        <li>
-                            <a
-                                    href="index.php?page=productos"> <img src="img/categorias/<?PHP echo $categoria['imagenes_categorias']?>.<?PHP echo $categoria['formato_imagen']?>" alt="<?PHP echo $catergoria['nombre_categoria']?>"></a>
+                <ul class="categorias-ul">
+                    <?PHP foreach($result as $index =>$categoria): ?>
+                        <li class="categogias-li">
+                            <a class="category-of-products" id="<?PHP echo $index+1 ?>"
+                                    href="#"> <img src="img/categorias/<?PHP echo $categoria['imagenes_categorias']?>.<?PHP echo $categoria['formato_imagen']?>" alt="<?PHP echo $catergoria['nombre_categoria']?>"></a>
                         </li>
                         </li>
                     <?php endforeach;?>
@@ -24,6 +25,9 @@
         <header>
             <h2>Productos</h2>
         </header>
+
+        <div id="categorias-de-productos"></div>
+
         </br>
         </br>
 
