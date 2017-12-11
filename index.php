@@ -19,6 +19,10 @@
                 include __DIR__.'/controller/controlerCategorias.php';
                 break;
 
+            case 'login':
+                include __DIR__.'/controller/controlerLogin.php';
+                break;
+
             case 'registro':
                 include __DIR__.'/controller/controlerRegistro.php';
                 break;
@@ -31,6 +35,8 @@
                 include __DIR__.'/controller/controlerSoloProducto.php';
                 /*include('controller/controlerSoloProducto.php');*/
                 break;
+
+
         }
 
     }
