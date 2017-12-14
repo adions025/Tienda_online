@@ -8,7 +8,7 @@
     background: white;
     width: 98%;
     max-width: 1140px;
-    margin: 0px auto;  /* 20px auto; */
+    margin: 15px auto;  /* 20px auto; */
     box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 #main-content-registro header,

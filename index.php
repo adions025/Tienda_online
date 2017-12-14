@@ -33,8 +33,9 @@
 
             case 'soloproducto':
                 include __DIR__.'/controller/controlerSoloProducto.php';
-                /*include('controller/controlerSoloProducto.php');*/
                 break;
+
+
 
 
         }

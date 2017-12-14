@@ -13,10 +13,9 @@
            max-height: 900px;
    */
     margin: 0px auto;  /* 20px auto; */
-    margin-bottom: -15px; /*separamos el footer del content si queremos */
+    margin-bottom: 15px; /*separamos el footer del content si queremos */
     box-shadow: 0 0 10px rgba(0,0,0,.4);
     /*border: 1px solid red;*/
-
 }
 
 

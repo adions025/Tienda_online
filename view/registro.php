@@ -12,9 +12,7 @@
     </header>
 
     <div class="registro-content">
-        <form method="post" action="http://deic-dc0.uab.cat/~tdiw-j6/controller/crearUsuario.php"/>
-
-
+        <form method="post" action="/~tdiw-j6/controller/crearUsuario.php"/>
             Nombre: <input type="text" name="nombre"/> <br/>
             Password: <input type="password" name="password"/> <br/>
             Email: <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/> <br/>

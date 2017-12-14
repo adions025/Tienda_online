@@ -12,8 +12,8 @@
     </header>
 
     <div class="registro-content">
-        <form method="post" action=""/>
-        Usuario: <input type="text" name="nombre"/> <br/>
+        <form method="post" action="/~tdiw-j6/controller/crearUsuario.php""/>
+        Email: <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/> <br/>
         Password: <input type="password" name="password"/> <br/>
         <br/><br />
         <input type="submit" value="Iniciar sesion"/>

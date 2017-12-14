@@ -8,11 +8,14 @@
     left: 0;
     top: 0;
     box-shadow: 0 0 10px rgba(0,0,0,.2);
-    margin-top: 0px; /*separacion del main-content con footer */
+    margin-top: -12px; /*separacion del main-content con footer */
+    background: #F0EFEF;
 
 }
 #main-footer p {
     margin: 0;
+    text-align: center;
+    padding-top: 40px;
 }
 
 #main-footer a {

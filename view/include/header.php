@@ -3,8 +3,9 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
     <title>Tienda Manolos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <link rel="stylesheet" type="text/css" href="view/resources/css/header.css">
     <link rel="stylesheet" type="text/css" href="view/resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="view/resources/css/productos.css">
