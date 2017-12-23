@@ -2,7 +2,6 @@
 console.log("Debug Consola JS"); //output messages to the consol
 
 $(document).ready(function(){
-
     /*
     data = {
         nombre: 'julanito',
@@ -13,20 +12,14 @@ console.log(data);
     $.post('controller/crearUsuario.php', data, function (response) {
 
         var arrayResponse= JSON.parse(response);
-
         console.log(arrayResponse);
-
-
         if(arrayResponse.valid){
             alert("todo ok");
         }else{
             alert("todo caca");
         }
-
-
     });
     */
-
 
     selectCategory("3");
         $('.category').click(function(){
@@ -36,11 +29,19 @@ console.log(data);
         });
 
 
+    $(".category-of-products").click(function() {
+        var id = $(this).attr("id-category");
+        //console.log(id);
+        $('#categorias-de-productos').load('index.php?page=productos&Id_Categoria='+id, function () {
+            console.log('Load completed!');
+        });
+           // alert(id);
+    });
+
+
     $('#productos-de-categorias').on('click', '.product', function () {
             var id = this.id;
-
             $('#main-content').load('index.php?page=soloproducto&Id_producto='+id, function () {
-
                 console.log('Load completed!');
             });
         //alert(id);
@@ -48,25 +49,56 @@ console.log(data);
     });
 
 
-    $('.category-of-products').on('click', '.category-of-products', function(){
-        $('#categorias-de-productos').load('index.php?page=productos&Id_Categoria='+id, function () {
-            // Aquest exemple no us funcionarà si no canvieu la url de la petició
-            console.log('Load completed!');
-        });
+    $('#main-content').on('click', '.addTo', function () {
+        var id = $(this).attr("id-product");
+        //alert(id);
+
+        changeItemTrolley(id, true);
+
     });
 
 
 });
 
 
+
+
+
+
+function changeItemTrolley(id, addDel){
+
+    data = {
+        idProduct:id,
+        addDel: addDel
+
+    };
+    console.log(data);
+    $.post('controller/controlerTrolley.php', data, function (response) {
+        console.log(response);
+        var arrayResponse= JSON.parse(response);
+
+        console.log( arrayResponse);
+
+        if(arrayResponse.valid){
+           updateViewTrolley(arrayResponse.trolley);
+        }else{
+            alert("todo caca");
+        }
+    });
+
+}
+
 function selectCategory(id) {
     $(".category").removeClass('selected');
     $("#"+id).addClass('selected');
-
     $('#productos-de-categorias').load('index.php?page=productos&Id_Categoria='+id, function () {
-
         console.log('Load completed!');
     })
+}
+
+
+function  updateViewTrolley(trolley) {
+    alert(trolley.length);
 }
 
 

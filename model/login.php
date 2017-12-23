@@ -1,38 +1,43 @@
 <?php
-function($email_usuario, $password_usuario){
-    try{
+function logearUsuario()
+{
+    try {
 
+        echo "---llega a logear usuario 2222---";
         $objData = new ConnectDB();
 
         $password_usuario = $_POST['password'];
+
         $email_usuario = $_POST['email'];
 
-        $password_usuario = password_hash($password_usuario, PASSWORD_BCRYPT);
+        $stmt = $objData->prepare('SELECT Id_usuario, nombre_usuario, password_usuario FROM Usuarios WHERE email_usuario = :email_usuario');
+        $stmt->bindParam('email_usuario', $email_usuario, PDO::PARAM_STR);
 
-        $stmt = $objData->prepare("SELECT Id_usuario FROM Usuarios WHERE (email_usuario=:email_usuario) AND $password_usuario=:$password_usuario");
-
-        $stmt->bindParam("$email_usuario", $usernameEmail,PDO::PARAM_STR) ;
-        $stmt->bindParam("$password_usuario", $password_usuario,PDO::PARAM_STR);
 
         $stmt->execute();
+
+        echo "---llega a logear usuario 4444---";
+
 
         $count=$stmt->rowCount();
         $data=$stmt->fetch(PDO::FETCH_OBJ);
         $objData = null;
 
-        if($count)
-        {
-            $_SESSION['Id_usuario']=$data->Id_usuario; // Guardamos sesion usuario
-            return true;
+        if($count == 1) {
+            $correct = password_verify($password_usuario, $data->password_usuario);
+            if ($correct) {
+                return ['id' => $data->Id_usuario, 'name' => $data->nombre_usuario]; // Guardamos id de sesion usuario
+                echo("logeadooooo0oo");
+                return $correct;
+            } else {
+                echo("DATOS INCORRECTOS");
+                return null;
+            }
         }
-        else
-        {
-            return false;
-        }
-
-        }catch(PDOException $e) {
-            echo '{"error":{"text":'. $e->getMessage() .'}}';
-        }
+        return null;
 
 
+    } catch (Exception $exception) {
+        echo "Error al login <br>" . $exception;
+    }
 }

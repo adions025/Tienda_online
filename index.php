@@ -1,8 +1,10 @@
 
 <!-- Adonis Gonzalez | Paul Paredes -->
-<!-- 1423193         |  14xxxx      -->
+<!-- 1423193         |  1424434      -->
 
-    <?PHP include __DIR__. '/view/include/header.php';
+    <?PHP
+    session_start();
+    include __DIR__. '/view/include/header.php';
     if (! isset($_GET['page']))  /*Operador Ternario*/
     {
         include __DIR__.'/controller/controlerHome.php';
@@ -34,8 +36,6 @@
             case 'soloproducto':
                 include __DIR__.'/controller/controlerSoloProducto.php';
                 break;
-
-
 
 
         }

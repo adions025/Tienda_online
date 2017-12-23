@@ -12,9 +12,8 @@
                 <ul class="categorias-ul">
                     <?PHP foreach($result as $index =>$categoria): ?>
                         <li class="categogias-li">
-                            <a class="category-of-products" id="<?PHP echo $index+1 ?>"
+                            <a class="category-of-products" id-category="<?PHP echo $index+1 ?>"
                                     href="#"> <img src="img/categorias/<?PHP echo $categoria['imagenes_categorias']?>.<?PHP echo $categoria['formato_imagen']?>" alt="<?PHP echo $catergoria['nombre_categoria']?>"></a>
-                        </li>
                         </li>
                     <?php endforeach;?>
                 </ul>

@@ -7,6 +7,7 @@
     <div class="productos-content">
         <?PHP foreach($result as $producto): ?>
             <li class="home-product-name"> <?php  echo $producto['nombre_producto']; ?></li>
+
         <?php endforeach;?>
 
         <br/>

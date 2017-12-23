@@ -14,7 +14,12 @@
             <li><a href="index.php?page=home"> Inicio </a></li>
             <li><a href="index.php?page=categorias"> Categorias </a></li>
             <!--<li><a href="index.php?page=productos"> Productos </a></li> -->
-            <li><a href="index.php?page=login"> Login </a></li>
+            <?php
+            if(isset($_SESSION['usuario'])) {
+                
+            } else {
+                echo '<li><a href="index.php?page=login"> Login </a></li>';
+            }?>
             <li><a href="index.php?page=registro"> Registro </a></li>
 
         </ul>

@@ -12,7 +12,7 @@
             <?php  echo $producto['descripcion_producto']; echo '</br></br>'?>
     <?php endforeach;?>
 
-            <button> Añadir al carro</button>
+            <button class="addTo" id-product="<?PHP  echo $producto['Id_producto']?>"> Añadir al carro</button>
             </br></br>
     </div>
 </section>
