@@ -5,9 +5,25 @@ console.log("Debug Consola JS"); //output messages to the consol
 
 function confirmRegistration(){
     alert("Al dar click aceptas los términos y condiciones");
-    //document.getElementById("main-content-registro").innerHTML= "<p>Te acabas de registrar con éxito, se ha enviado un email de confirmación a tu correo electrónico.</p>";
-    return true;
+    var nombre = $("input[name='nombre']").val();
+    var password = $("input[name='password']").val();
+    var email = $("input[name='email']").val();
+    var address = $("input[name='address']").val();
+    var ciudad = $("input[name='ciudad']").val();
+    var cp = $("input[name='cp']").val();
+
+    $.post( "/~tdiw-j6/controller/crearUsuario.php", { nombre: nombre, password: password, email: email, address: address, ciudad: ciudad,
+    cp: cp})
+        .done(function( data ) {
+            //alert( "Data Loaded: " + data );
+            document.getElementById("main-content-registro").innerHTML= "<p>"+data+"</p>";
+
+        });
+
+    return false;
 }
+
+
 
 /*
 function confirmRegistration(){

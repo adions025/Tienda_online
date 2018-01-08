@@ -44,6 +44,7 @@ img {
     max-width: 1140px; /*ancho*/
     height: 40px;
     margin: 3px auto; /*distancia entre el header y menu */
+    display: flex;
     /*border: 1px solid black;*/
     /*
     border-top: 1px solid #6D6C6C;
@@ -55,7 +56,10 @@ img {
 }
 
 #menu a {
+    display: block;
     color: black;
+    background: #F0EFEF;
+    text-decoration: none;
 }
 
 #menu nav {
@@ -65,6 +69,8 @@ img {
 nav ul {
     margin: 0;
     padding: 0;
+    /*list-style: none;*/
+    display: flex;
     list-style: none;
     padding-right:20px;
 }
@@ -79,10 +85,44 @@ nav ul li a {
     display: block;
     padding: 0 20px;
     text-decoration: none; /* quitamos line de hipervinculo */
-
 }
 
-nav ul li a:hover {
+#menu a:hover {
     background: #DD5050;
     /*margin-left: -4px;*/ /*si poner border necesitamos alinear el hover */
 }
+
+/**
+nav ul li a:hover {*/
+   /* background: #DD5050;*/
+/*    /*margin-left: -4px;*/ /*si poner border necesitamos alinear el hover */
+/*}*/
+
+#menu ul li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+
+#btn-menu{
+    display: none;
+}
+
+#menu label{
+    cursor: pointer;
+    display: none;
+}
+#menu ul ul {
+    display: none;
+}
+
+#menu a span{
+    margin-left: 1px;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+

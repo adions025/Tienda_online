@@ -1,9 +1,8 @@
 <?php
-echo "estoy aqui";
+
 function insertarUsuario()
 {
     $objData = new ConnectDB();
-    echo "estoy en Conext2";
     $nombre_usuario = $_POST['nombre'];
     $password_usuario = $_POST['password'];
     $email_usuario = $_POST['email'];
@@ -17,7 +16,6 @@ function insertarUsuario()
 
     $stmt->bindParam('nombre_usuario', $nombre_usuario);
     $stmt->bindParam('email_usuario', $email_usuario);
-    //$password_usuario= hash('sha256', $password_usuario); //Password encryptionç
 
     $password_usuario = password_hash($password_usuario, PASSWORD_BCRYPT);
     $stmt->bindParam("password_usuario", $password_usuario,PDO::PARAM_STR);
@@ -26,9 +24,9 @@ function insertarUsuario()
     $stmt->bindParam('cp_usuario', $cp_usuario);
     $stmt->bindParam('usuario_activo', $usuario_activo);
 
-    echo "estoy en Conext3";
+
     $stmt->execute();
-    echo "estoy en Conext4";
+    echo("Se ha regustrado con exito");
 
 }
 ?>

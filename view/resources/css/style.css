@@ -96,6 +96,18 @@
         color: #ffffff !important;
     }
 
+   .carrito a {
+       width: 20px;
+
+       margin-left: 100%;
+      /* display: inline-block;*/
+       /*vertical-align: top;*/
+   }
+
+
+
+
+
 /*
     #productos ul{
         list-style:none;

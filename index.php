@@ -1,10 +1,9 @@
 
 <!-- Adonis Gonzalez | Paul Paredes -->
 <!-- 1423193         |  1424434      -->
-
     <?PHP
     session_start();
-    include __DIR__. '/view/include/header.php';
+
     if (! isset($_GET['page']))  /*Operador Ternario*/
     {
         include __DIR__.'/controller/controlerHome.php';
@@ -37,7 +36,29 @@
                 include __DIR__.'/controller/controlerSoloProducto.php';
                 break;
 
+            case 'carro':
+                include __DIR__.'/controller/controllerCarro.php';
+                break;
 
+            case 'pagado':
+                include __DIR__.'/controller/controlerPagar.php';
+                break;
+
+            case 'logout':
+                include __DIR__.'/controller/controlerLogout.php';
+                break;
+
+            case 'administrar':
+                include __DIR__.'/controller/controlerAdministrador.php';
+                break;
+
+            case 'loginAction':
+                include __DIR__.'/controller/controllerLogin.php';
+                break;
+
+            case 'productosAll':
+                include __DIR__.'/controller/controlerProductosAll.php.php';
+                break;
         }
 
     }

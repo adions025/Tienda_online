@@ -20,7 +20,7 @@ if(isset($_POST["idProduct"], $_POST["addDel"])){
     }
 }
 $response["trolley"]=$_SESSION["trolley"];
-echo json_encode($response);
+/*echo json_encode($response);*/
 
 
 function validIdProduct($id){
@@ -29,5 +29,10 @@ function validIdProduct($id){
 
 function deleteItemTrolley($id){
 
+}
+if ($_GET["delete"]){
+    $result = array_search($_GET["delete"],$_SESSION["trolley"]);
+    unset($_SESSION["trolley"][$result]);
+   /* print_r($_SESSION["trolley"]);*/
 }
 ?>

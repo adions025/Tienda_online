@@ -1,8 +1,7 @@
 <body>
-<?PHP include __DIR__.'/../view/include/menu.php';?>
-<?/*PHP require '../model/ConnectDB.php'*/;?>
-<script src="js/jqueryFunction.js"> </script>
-
+<?PHP
+include __DIR__. '/../view/include/header.php';
+include __DIR__.'/../view/include/menu.php';?>
 <!--#####################################################################-->
 
 <section id="main-content-registro">
@@ -12,15 +11,13 @@
     </header>
 
     <div class="registro-content">
-        <form method="post" action="/~tdiw-j6/controller/controllerLogin.php""/>
-        Email: <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/> <br/>
-        Password: <input type="password" name="password"/> <br/>
-        <br/><br />
-        <input type="submit" value="Iniciar sesion"/>
+        <form method="post" action="index.php?page=loginAction""/>
+            Email: <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/> <br/>
+            Password: <input type="password" name="password"/> <br/>
+            <label class="login">¿Admin?:</label><input type="checkbox" value="1" name="admin" /><br/>
+            <input type="submit" value="Iniciar sesion"/>
         </form>
     </div>
-
-
 </section> <!-- / #main-content -->
 
 <?PHP include __DIR__.'/../view/include/footer.php'; ?>
