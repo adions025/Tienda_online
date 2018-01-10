@@ -1,8 +1,7 @@
-</head>
-<body>
-<?PHP
-include __DIR__. '/../view/include/header.php';?>
 
+<?php
+include __DIR__. '/../view/include/header.php';
+include __DIR__.'/../view/include/menu.php';?>
 
 <section id="main-content-categorias">
     <header>

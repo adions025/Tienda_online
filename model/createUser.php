@@ -3,12 +3,12 @@
 function insertarUsuario()
 {
     $objData = new ConnectDB();
-    $nombre_usuario = $_POST['nombre'];
-    $password_usuario = $_POST['password'];
-    $email_usuario = $_POST['email'];
-    $direccion_usuario = $_POST['address'];
-    $poblacion_usuario = $_POST['ciudad'];
-    $cp_usuario = $_POST['cp'];
+    $nombre_usuario = htmlentities($_POST['nombre'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $password_usuario = htmlentities($_POST['password'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $email_usuario = htmlentities($_POST['email'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $direccion_usuario = htmlentities($_POST['address'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $poblacion_usuario = htmlentities($_POST['ciudad'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $cp_usuario = htmlentities($_POST['cp'], ENT_QUOTES | ENT_HTML5, 'UTF-8');
     $usuario_activo = 0;
 
     $stmt = $objData->prepare('INSERT INTO Usuarios (nombre_usuario, password_usuario, email_usuario, direccion_usuario, poblacion_usuario, cp_usuario, usuario_activo) '

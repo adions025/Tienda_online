@@ -16,11 +16,11 @@ function logearUsuario()
             if($count == 1) {
                 $correct = password_verify($password_usuario, $data->password_usuario);
                 if ($correct) {
-                    return ['id' => $data->Id_usuario, 'name' => $data->nombre_usuario, 'rol' => $data->usuario_rol]; // Guardamos id y nombre de usuario
-                    echo("logeadooooooo correcto");
+                    return ['id' => $data->Id_usuario, 'name' => $data->nombre_usuario, 'rol' => $data->usuario_rol]; // Guardamos id y nombre de usuario, y rol
+                    /*echo("Login correcto");*/
                     return $correct;
                 } else {
-                    echo("DATOS INCORRECTOS");
+                    /*echo("Usuario o contraseña incorrecto");*/
                     return null;
                 }
             }

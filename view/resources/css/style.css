@@ -136,30 +136,39 @@
         padding-left: 40px;
     }
 
-    .home-product{
-        display: inline;
-        padding: 10px 30px 10px 30px;
-    }
+    /*imagen*/
 
-    .home-product-name{
-        display: inline;
-        text-align: right;
-        margin-left: 60px;
-        padding: 10px 30px 10px 30px;
-    }
+ .productos-content ul{
+        text-align: center;
 
-    .precio-producto{
-        display: inline;
-        margin-left: 60px;
-        padding: 10px 120px 10px 30px;
+        display: table-cell;
+        border-top: 10px solid;
+        border-bottom: 10px solid;
+        border-bottom: 10px solid;
+        border-right: 10px solid ;
+        border-left: 10px solid ;
+
+        padding: 6px;
+        border-color: ghostwhite;
+        list-style-type: none;
+        padding-left: 40px;
+        padding-right: 50px;
+
     }
+ .productos-content{
+     text-align: center;
+     padding: 0px 50px 10px 50px;
+
+ }
 
     #soloProducto{
         padding-left: 40px;
+
     }
     #soloProducto li {
         list-style: none;
     }
+
 
 
 

@@ -44,12 +44,14 @@ $(document).ready(function(){
         //alert(id);
         changeItemTrolley(id, true);
     });
+
+
+    $('#main-content').on('click', '.addTo', function () {
+        var id = $(this).attr("id-product");
+        changePrice(id, true);
+    });
+
 });
-
-
-
-
-
 
 function changeItemTrolley(id, addDel){
 
@@ -72,6 +74,26 @@ function changeItemTrolley(id, addDel){
     });
 
 }
+
+
+function changePrice(id, addDel){
+
+    data = {
+        idProduct:id,
+        addDel: addDel
+    };
+    console.log(data);
+    $.post('controller/controlerTotalPrecio.php', data, function (response) {
+        console.log(response);
+        $("#cabasTotal").load('controller/controlerTotalPrecio.php');
+
+    });
+
+}
+
+
+
+
 
 function selectCategory(id) {
     $(".category").removeClass('selected');

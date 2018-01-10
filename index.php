@@ -3,11 +3,9 @@
 <!-- 1423193         |  1424434      -->
     <?PHP
     session_start();
-
-    if (! isset($_GET['page']))  /*Operador Ternario*/
+    if (! isset($_GET['page']))
     {
         include __DIR__.'/controller/controlerHome.php';
-
     } else {
         $page = $_GET['page'];
         switch($page)
@@ -20,15 +18,19 @@
                 include __DIR__.'/controller/controlerCategorias.php';
                 break;
 
-            case 'login':
+            case 'login':  //only show the form login not the action
                 include __DIR__.'/controller/controlerLogin.php';
                 break;
 
-            case 'registro':
+            case 'loginAction': //action to login the users (admin = 2 and user =1)
+                include __DIR__.'/controller/controllerLogin.php';
+                break;
+
+            case 'registro': //only show the form register not the action
                 include __DIR__.'/controller/controlerRegistro.php';
                 break;
 
-            case 'productos': /*solo view y no incluye header ni  footer*/
+            case 'productos': //only view
                 include __DIR__.'/controller/controlerProductos.php';
                 break;
 
@@ -52,12 +54,20 @@
                 include __DIR__.'/controller/controlerAdministrador.php';
                 break;
 
-            case 'loginAction':
-                include __DIR__.'/controller/controllerLogin.php';
-                break;
-
             case 'productosAll':
                 include __DIR__.'/controller/controlerProductosAll.php.php';
+                break;
+
+            case 'adminPedidos':
+                include __DIR__.'/controller/controlerAdminPedidos.php';
+                break;
+
+            case 'adminProductos':
+                include __DIR__.'/controller/controlerAdminShowProductos.php';
+                break;
+
+            case 'adminAdd':
+                include __DIR__.'/controller/controlerAdminAddProducto.php';
                 break;
         }
 

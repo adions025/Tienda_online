@@ -6,10 +6,8 @@ include __DIR__.'/../model/ConnectDB.php';
 include __DIR__.'/../model/obtenerProductos.php';
 
 
-$result = obtenerPedidos();
+$productos = obtenerProductos();
 
 
-include __DIR__.'/../view/administracion.php';
-
-
+include __DIR__.'/../view/adminShowProductos.php';
 
