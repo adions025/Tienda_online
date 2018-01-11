@@ -35,12 +35,12 @@
                     }
                 ?>
 
-            <li><a id="cabasmenu" href="index.php?page=carro"> <?php echo (sizeof($_SESSION['trolley'])); ?><span class="icon-basket"></span>
+            <li><a id="cabasmenu" href="index.php?page=carro"> <?php echo (sizeof($_SESSION['trolley']));?><span class="icon-basket"></span>
                 </a>
             <ul>
 
 
-                <li><a id="cabasTotal" href="index.php?page=registro">Total: <?php echo ($total); echo('€');?></span></a></li>
+                <li><a id="cabasTotal" href="#"><?php echo('Total: '); echo($_SESSION["trolley"]['precio']); ?></a></li>
             </ul></li>
 
                     <?php

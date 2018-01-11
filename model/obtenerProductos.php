@@ -77,7 +77,7 @@ function insertarProducto($filename, $ext)
 
     $stmt->execute();
 
-    echo("Se ha insertado con exito el producto");
+    //echo("Se ha insertado con exito el producto");
 
 }
 

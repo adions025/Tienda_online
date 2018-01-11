@@ -69,6 +69,14 @@
             case 'adminAdd':
                 include __DIR__.'/controller/controlerAdminAddProducto.php';
                 break;
+
+            case 'adminViewAdd':
+                include __DIR__.'/controller/controlerAdminViewAddproducto.php';
+                break;
+
+            case 'calcularTotal':
+                include __DIR__.'/controller/controlerCalcularTotal.php';
+                break;
         }
 
     }

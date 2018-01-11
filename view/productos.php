@@ -18,15 +18,7 @@
             <br/>
                 <li class="precio-producto"> <?php  echo $producto['precio_producto']; echo '€' ?></li>
                 </ul>
-            <?php
-            $count++;
 
-            if ($count==4 || $count== 8 || $count== 12)
-            {
-            echo "<br>";
-
-            }
-            ?>
 
 
         <?php endforeach;?>

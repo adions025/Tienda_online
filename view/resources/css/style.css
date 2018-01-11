@@ -169,6 +169,34 @@
         list-style: none;
     }
 
+    .pedidos {
+
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .pedidos td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    .pedidos tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    .button {
+        background-color: lightblue;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 6px 3px;
+        cursor: pointer;
+        margin-left: 500px;
+    }
 
 
 

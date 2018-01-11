@@ -9,7 +9,6 @@ include __DIR__.'/../view/include/menu.php';
         <p>Completa todo los datos</p>
     </header>
 
-
     <div class="registro-content">
 
         <form enctype="multipart/form-data" action="/~tdiw-j6/controller/controlerAdminAddProducto.php" method="POST">
