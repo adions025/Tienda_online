@@ -16,11 +16,8 @@
                     if(isset($_SESSION['usuario'])) {
                         ?> <li><a href="#">  <?php echo "".$_SESSION['usuario']['name'];?><span class="icon-user"> </a>
                         <ul>
-
                             <li></li>
-
                             <?php echo '<li><a href="index.php?page=logout">Logout<span class="icon-logout"></a></li>
-
                         </ul></li>';
                             ?>
 
@@ -40,7 +37,7 @@
             <ul>
 
 
-                <li><a id="cabasTotal" href="#"><?php echo('Total: '); echo($_SESSION["trolley"]['precio']); ?></a></li>
+                <li><a id="cabasTotal" href="#"></a></li>
             </ul></li>
 
                     <?php

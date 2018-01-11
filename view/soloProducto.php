@@ -14,12 +14,9 @@
             </br>
             <?php  echo $producto['descripcion_producto']; echo '</br></br>'?>
 
-
     <?php endforeach;?>
 
             <button class="addTo" precio="<?PHP  echo $producto['precio_producto']?>" id-product="<?PHP  echo $producto['Id_producto']?>">Añadir al carro</button>
-
-            <?php print_r($_SESSION['trolley']['precio']); ?>
             </br></br>
     </div>
 </section>

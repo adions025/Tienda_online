@@ -29,10 +29,14 @@ $(document).ready(function(){
 
     $('#main-content').on('click', '.addTo', function () {
         var id = $(this).attr("id-product");
-        precio = $(this).attr("precio");
+        var precio = $(this).attr("precio");
         //alert(id);
         changeItemTrolley(id, true, precio);
+        console.log("hola");
     });
+
+    $("#cabasmenu").load('controller/controlerCabasMenu.php');
+    $("#cabasTotal").load('controller/controlerTotalPrecio.php');
 
 });
 
@@ -43,10 +47,12 @@ function changeItemTrolley(id, addDel, precio){
         precio:precio
          };
     console.log(data);
+    console.log("hola2");
     $.post('controller/controlerTrolley.php', data, function (response) {
+        console.log("hola3");
         console.log(response);
         $("#cabasmenu").load('controller/controlerCabasMenu.php');
-        //$("#cabasTotal").load('controller/controlerTotalPrecio.php');
+        $("#cabasTotal").load('controller/controlerTotalPrecio.php');
 
     });
 }

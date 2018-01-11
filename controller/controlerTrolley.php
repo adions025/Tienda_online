@@ -6,7 +6,6 @@ include __DIR__.'/../model/obtenerProductos.php';
 
 if(!isset($_SESSION["trolley"])){
     $_SESSION["trolley"] = array();
-
 }
     $response["valid"]=false;
 
@@ -14,7 +13,6 @@ if(isset($_POST["idProduct"], $_POST["addDel"], $_POST['precio'])){
     if(validIdProduct($_POST["idProduct"])){
         if($_POST["addDel"]){
             $_SESSION["trolley"][]=$_POST["idProduct"];
-            $_SESSION["trolley"]['precio']=$_POST["precio"] + $_SESSION["trolley"]['precio'];
             $response["valid"]=true;
         }else{
             deleteItemTrolley($_POST["idProduct"]);
