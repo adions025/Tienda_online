@@ -33,18 +33,21 @@
                     </tr>
                     <?php $total+= $producto['precio_producto']; ?>
                 <?php endforeach;?>
+            <?php
 
+            ?>
             <?php echo("</table>");?>
             <br><br>
             <table class="pedidos">
                     <tr>
                         <td> <p>Total</p> </td>
                         <td total="<?php echo ($total);?>"><?php echo ($total); echo('€');?></td>
+
                     </tr>
             </table>
             <?php } ?>
         <br><br>
-    <td><a class="button"index.php?page=pagado"> Pagar</a> </td>
+    <td><a class="button" href="index.php?page=pagado"> Pagar</a> </td>
 </section>
 
 <?PHP include __DIR__.'/../view/include/footer.php'; ?>
