@@ -1,8 +1,6 @@
 
 console.log("Debug Consola JS"); //output messages to the consol
 
-
-
 function confirmRegistration(){
     alert("Al dar click aceptas los términos y condiciones");
     var nombre = $("input[name='nombre']").val();
@@ -22,31 +20,6 @@ function confirmRegistration(){
 
     return false;
 }
-
-
-
-/*
-function confirmRegistration(){
-    $("button#submit").click(function(){
-        if($("#nombre").val() === "" || $("#email").val() === ""){
-            $("div#mensaje").html("Ingrese datos");
-            return false;
-        }else{
-            $.post($("#my_form").attr("action"),
-                $("#my_form :input").serializeArray(),
-                function(data){
-                    $("div#mensaje").html(data);
-                    if(data == "Usuario encontrado"){
-                        window.location.href = "index.php";
-                    }
-                });
-        }
-        $("#my_form").submit(function(){
-            return false;
-        });
-    })}
-   */
-
 
 function loadDoc(Id_categoria) {
     var xhttp = new XMLHttpRequest();
