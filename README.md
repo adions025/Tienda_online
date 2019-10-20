@@ -2,8 +2,7 @@
 Tienda online usando php:pdO, jquery con html y css 
 
 
-Tienda con MVC sin usar nigun framework
-Una manera de separar el contenido estructuradamente
+Tienda con MVC sin usar nigun framework, una manera de separar el contenido estructuradamente
 
 
 UAB
